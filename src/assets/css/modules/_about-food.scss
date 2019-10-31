@@ -1,0 +1,16 @@
+.about-food {
+  display: flex;
+
+  &__photo-container {
+    flex: 4;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__content {
+    flex: 3;
+    padding: 85px 0 0 60px;
+  }
+}
