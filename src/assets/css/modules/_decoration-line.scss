@@ -1,0 +1,9 @@
+.decoration-line {
+  height: 5px;
+  background-color: $mainColor;
+  border: none;
+
+  &--small {
+    width: 20%;
+  }
+}
