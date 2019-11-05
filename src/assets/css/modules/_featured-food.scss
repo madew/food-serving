@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   column-gap: 110px;
+  margin-bottom: 150px;
 
   &__content {
     grid-column: 1 / 3;

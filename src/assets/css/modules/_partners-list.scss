@@ -1,0 +1,34 @@
+.partners-list {
+  margin: 0 auto;
+
+  & > div {
+    display: flex;
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  &__bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bullet {
+    width: 9px;
+    height: 9px;
+    border: 1px solid $mainColor;
+    border-radius: 100%;
+
+    &:not(:last-of-type) {
+      margin-right: 24px;
+    }
+
+    &--active {
+      width: 12px;
+      height: 12px;
+      background-color: $mainColor;
+    }
+  }
+}
