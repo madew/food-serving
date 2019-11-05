@@ -1,5 +1,11 @@
 .partners-list {
   margin: 0 auto;
+  display: none;
+  // change it later, when add js slider
+
+  @include atLarge {
+    display: block;
+  }
 
   & > div {
     display: flex;

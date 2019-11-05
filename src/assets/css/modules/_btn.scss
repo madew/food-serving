@@ -1,5 +1,5 @@
 .btn {
-  padding: 29px;
+  padding: 26px;
   background-color: $mainColor;
   border-radius: 50px;
   color: #fff;
@@ -7,14 +7,20 @@
   transition: background-color 0.3s ease;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   border: none;
+
+  @include atLarge {
+    font-size: 1rem;
+  }
 
   &:hover {
     background-color: $darkMainColor;
 
-    & .btn__arrow {
-      margin-left: 160px;
+    @include atLarge {
+      & .btn__arrow {
+        margin-left: 160px;
+      }
     }
   }
 
@@ -25,8 +31,13 @@
 
   &__arrow {
     display: inline-block;
-    width: 20px;
-    margin-left: 150px;
+    width: 30px;
+    margin-left: 80px;
     transition: margin-left 0.3s ease;
+
+    @include atLarge {
+      width: 20px;
+      margin-left: 150px;
+    }
   }
 }

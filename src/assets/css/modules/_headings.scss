@@ -3,6 +3,11 @@
   font-weight: 700;
   font-size: 2rem;
   color: $mainBlack;
+  text-align: center;
+
+  @include atLarge {
+    text-align: left;
+  }
 
   &--small {
     font-size: 1.2rem;
@@ -13,6 +18,10 @@
   }
 
   &--large {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
+
+    @include atLarge {
+      font-size: 3.3rem;
+    }
   }
 }

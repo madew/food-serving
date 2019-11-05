@@ -1,5 +1,10 @@
 .footer {
   display: flex;
+  flex-direction: column;
+
+  @include atLarge {
+    flex-direction: row;
+  }
 
   &__form-container {
     flex: 1;

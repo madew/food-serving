@@ -3,4 +3,11 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.5;
+  font-size: 1.3rem;
+  text-align: center;
+
+  @include atLarge {
+    font-size: 1rem;
+    text-align: left;
+  }
 }

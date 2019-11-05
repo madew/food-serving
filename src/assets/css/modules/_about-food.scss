@@ -1,9 +1,18 @@
 .about-food {
   display: flex;
   margin-bottom: 150px;
+  flex-direction: column-reverse;
+
+  @include atLarge {
+    flex-direction: row;
+  }
 
   &__photo-container {
-    flex: 4;
+    flex: 1;
+
+    @include atLarge {
+      flex: 4;
+    }
   }
 
   &__photo {
@@ -13,9 +22,13 @@
   }
 
   &__content {
-    flex: 3;
+    flex: 1;
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @include atLarge {
+      flex: 3;
+    }
   }
 }
