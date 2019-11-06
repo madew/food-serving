@@ -3,22 +3,28 @@
   margin-bottom: 150px;
   flex-direction: column-reverse;
 
-  @include atLarge {
+  @include atMedium {
     flex-direction: row;
   }
 
   &__photo-container {
     flex: 1;
+    margin-top: 30px;
 
-    @include atLarge {
+    @include atMedium {
       flex: 4;
+      margin-top: 0px;
     }
   }
 
   &__photo {
     width: 100%;
-    height: 740px;
+    height: auto;
     object-fit: cover;
+
+    @include atMedium {
+      height: 740px;
+    }
   }
 
   &__content {
@@ -26,9 +32,12 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
-    @include atLarge {
+    @include atMedium {
+      padding-left: 60px;
       flex: 3;
+      text-align: left;
     }
   }
 }
