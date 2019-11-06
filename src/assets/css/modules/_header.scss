@@ -66,11 +66,13 @@
     justify-content: center;
     max-width: none;
     align-items: center;
+    text-align: center;
 
     @include atLarge {
       height: calc(100vh - 150px);
       max-width: 400px;
       align-items: flex-start;
+      text-align: left;
     }
 
     & .btn {
