@@ -1,12 +1,13 @@
 .heading {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: $mainBlack;
   text-align: center;
 
   @include atLarge {
     text-align: left;
+    font-size: 2rem;
   }
 
   &--small {
