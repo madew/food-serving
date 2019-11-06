@@ -9,7 +9,11 @@
   }
 
   &--small {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+
+    @include atLarge {
+      font-size: 1.2rem;
+    }
   }
 
   &--medium {
