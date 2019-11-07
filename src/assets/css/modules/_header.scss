@@ -160,8 +160,8 @@
     right: 0;
     bottom: 0;
 
-    transform: translateX(100%);
     transition: all 0.3s;
+    transform: translateX(100%);
 
     @include atLarge {
       position: relative;
@@ -180,7 +180,7 @@
       font-size: 1.7rem;
 
       @include atLarge {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
     }
   }

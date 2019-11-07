@@ -12,3 +12,16 @@ a {
   text-decoration: none;
 }
 
+// *,
+// *::after,
+// *::before {
+//   // Prevent transition to fire before full page load
+//   transition: none !important;
+// }
+
+.preload-transitions *,
+.preload-transitions *::before,
+.preload-transitions *::after {
+  // Prevent transition to fire before full page load
+  transition: none !important;
+}
